@@ -1,26 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   background-color: rgb(14, 19, 37);
   text-align: center;
   color: #fff;
-  margin: auto;
 }
 
+.bg-img{
+  border-radius: 10px;
+  margin: 0;
+}
 .design{
   background-color: #281c4a;
-  margin:7% 15%;
+  margin: 5%;
   border-radius: 10px;
 }
 
 .title{
   padding: 4% 4% 4% 7%;
-  /* padding-left: 4%;
-  padding-right: 7%; */
   text-align: left;
 }
 
 .heading{
   font-size: 2rem;
-  /* text-align: center; */
   font-weight: bold;
 }
 
@@ -51,14 +55,6 @@ body{
   color: 	#999999;
 }
 
-.bg-img{
-  background-image: url("images/image-header-desktop.jpg");
-  background-color: #8146b9;
-  /* background-color: rgba(129, 70, 185,0.5); */
-  opacity: 0.4;
-  display: block;
-
-}
 
 .attribution {
   font-size: 11px;
@@ -66,15 +62,12 @@ body{
 }
 .attribution a {
   color: rgb(62, 82, 163);
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 400px) {
-  .bg-img{
-    background-image: url("images/image-header-mobile.jpg");
-    background-color: #8146b9;
-    /* background-color: rgba(129, 70, 185,0.5); */
-    opacity: 0.4;
-    /* position: relative;
-    bottom: 7%; */
+@media only screen and (min-width: 400px){
+  #wrapper{
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
